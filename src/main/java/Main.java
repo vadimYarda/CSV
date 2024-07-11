@@ -16,11 +16,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class Main {
-    String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
-    String fileName = "data.csv";
-    List<Employee> list = parseCSV(columnMapping,fileName);
-    String json = listToJson(list);
-    String jsonFilename = "data.json";
+    private String[] columnMapping = {"id", "firstName", "lastName", "country", "age"};
+    private String fileName = "data.csv";
+    private List<Employee> list = parseCSV(columnMapping,fileName);
+    private String json = listToJson(list);
+    private String jsonFilename = "data.json";
 
 
     public static List<Employee> parseCSV(String[] columnMapping, String fileName) {
